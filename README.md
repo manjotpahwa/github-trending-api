@@ -14,7 +14,13 @@ The missing layer of Python APIs for Github's trending repositories.
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/manjotpahwa/github-trending-api/blob/master/LICENSE)
 [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
-# Unofficial APIs for Github trending in Python
-The missing layer of Python APIs for Github's trending repositories.
+# Getting Started
+URL endpoint:
+<insert url endpoint>
 
+To get started, simply use get_trending:
+<insert gif>
 
+# Projects built using github-trending-api
+Here is a list of projects built using this API (please send a PR if your project is not featured here):
+<insert list of projects>
