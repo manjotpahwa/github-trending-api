@@ -8,10 +8,9 @@ import requests
 
 BASE_URL = 'https://github.com/'
 TRENDING_URL =  'trending?since=today'
-TIMEOUT = 30
 
 
-class GithubRisingRepos():
+class GithubTrending():
 
     async def get_request(self, session, url: str, headers: dict = None) -> str:
         """
@@ -92,7 +91,8 @@ class GithubRisingRepos():
         }
 
 
-    async def get_trending(self):
+    @classmethod
+    async def get_trending(cls):
         """
         Get the top most trending repositories from Github for today.
 
@@ -103,6 +103,7 @@ class GithubRisingRepos():
             total count.
         """
         async with aiohttp.ClientSession() as session:
+            self = cls()
             resp = await self.get_request(session, BASE_URL + TRENDING_URL)
             resp_etree = self.convertXMLToEtree(resp)
             repos = await self.parse_repo(resp_etree)
@@ -111,6 +112,10 @@ class GithubRisingRepos():
 
 
 if __name__=='__main__':
-    g = GithubRisingRepos()
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(g.get_trending())
+    loop.run_until_complete(GithubTrending.get_trending())
+#    try:
+#        loop.run_forever()
+#    finally:
+#        loop.run_until_complete(loop.shutdown_asyncgens())
+#        loop.close()
