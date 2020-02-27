@@ -4,7 +4,7 @@ with open('README.md') as readme_file:
     README = readme_file.read()
 
 setup_args = dict(
-    name='github_trending',
+    name='github-trending-api',
     version='0.1',
     description='Pypi package to access Github trending in Python',
     long_description_content_type="text/markdown",

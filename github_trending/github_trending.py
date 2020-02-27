@@ -1,9 +1,7 @@
 import aiohttp
 import asyncio
-from github import Github
 import json
 from lxml import etree
-import requests
 
 
 BASE_URL = 'https://github.com/'
