@@ -5,7 +5,7 @@ with open('README.md') as readme_file:
 
 setup_args = dict(
     name='github-trending-api',
-    version='0.1',
+    version='0.2.1',
     description='Pypi package to access Github trending in Python',
     long_description_content_type="text/markdown",
     long_description=README,
@@ -19,7 +19,8 @@ setup_args = dict(
 )
 
 install_requires = [
-    'aiohttp'
+    'aiohttp',
+    'lxml'
 ]
 
 if __name__ == '__main__':
