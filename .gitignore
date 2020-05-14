@@ -4,3 +4,5 @@ dist
 
 # Virtualenv files
 env
+
+github_trending.egg-info
