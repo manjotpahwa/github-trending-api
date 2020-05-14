@@ -2,6 +2,14 @@ import aiohttp
 import asyncio
 import json
 from lxml import etree
+import tornado.escape
+import tornado.ioloop
+import tornado.locks
+import tornado.web
+import os.path
+import uuid
+
+from tornado.options import define, options, parse_command_line
 
 
 BASE_URL = 'https://github.com/'
@@ -9,7 +17,6 @@ TRENDING_URL =  'trending?since=today'
 
 
 class GithubTrending():
-
     async def get_request(self, session, url: str, headers: dict = None) -> str:
         """
         Async method to get the response.
@@ -106,14 +113,3 @@ async def get_trending():
         repos = await g.parse_repo(resp_etree)
         print(repos)
     return repos
-
-
-
-if __name__=='__main__':
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(get_trending())
-#    try:
-#        loop.run_forever()
-#    finally:
-#        loop.run_until_complete(loop.shutdown_asyncgens())
-#        loop.close()

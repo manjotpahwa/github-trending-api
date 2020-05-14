@@ -1,0 +1,9 @@
+README.md
+setup.py
+github_trending/__init__.py
+github_trending/github_trending.py
+github_trending.egg-info/PKG-INFO
+github_trending.egg-info/SOURCES.txt
+github_trending.egg-info/dependency_links.txt
+github_trending.egg-info/requires.txt
+github_trending.egg-info/top_level.txt

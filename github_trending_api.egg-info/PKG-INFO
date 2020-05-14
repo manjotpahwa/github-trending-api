@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: github-trending-api
+Version: 0.2.2
+Summary: Pypi package to access Github trending in Python
+Home-page: https://github.com/manjotpahwa/github-trending-api
+Author: Manjot Pahwa
+Author-email: manjot.pahwa@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/github-trending-api/
+Description: <h1 align="center">Unofficial Python APIs for Github Trending</h1>
+        
+        <p align="center">
+        The missing layer of Python APIs for Github's trending repositories.
+        </p>
+        
+        <div align="center">
+          <img src="images/2women_1.png" alt="hero image" width="400"/>
+        </div>
+        
+        <br />
+        
+        [![coverage](https://img.shields.io/codecov/c/github/manjotpahwa/github-trending-api.svg)](https://codecov.io/github/manjotpahwa/github-trending-api)
+        [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/manjotpahwa/github-trending-api/blob/master/LICENSE)
+        [![Code of Conduct](https://img.shields.io/badge/code%20of-conduct-ff69b4.svg)](CODE_OF_CONDUCT.md)
+        
+        # Getting Started
+        URL endpoint:
+        <insert url endpoint>
+        
+        To get started, simply use get_trending:
+        <insert gif>
+        
+        # Projects built using github-trending-api
+        Here is a list of projects built using this API (please send a PR if your project is not featured here):
+        <insert list of projects>
+        
+Keywords: Github,Github Trending
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
