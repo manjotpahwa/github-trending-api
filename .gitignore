@@ -6,3 +6,4 @@ dist
 env
 
 github_trending.egg-info
+github_trending_api.egg-info
